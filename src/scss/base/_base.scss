@@ -1,0 +1,32 @@
+@use 'settings' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: $m-size;
+  background-color: $dark-blue;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: auto;
+  }
+}

@@ -1,0 +1,42 @@
+@use '../base/settings' as *;
+
+.btn {
+  background: $purple;
+  border: none;
+  border-bottom: .3rem solid darken($purple, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+  transition: all .2s;
+
+  &:disabled {
+    opacity: .5;
+    transform: translateY(0px) !important;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  &--lg {
+    border-bottom: .6rem solid darken($purple, 10%);
+    font-size: $l-size;
+    font-weight: bold;
+    padding: 2.4rem;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--link {
+    background: none;
+    color: $off-white;
+    padding: 0;
+    border: none;
+  }
+}

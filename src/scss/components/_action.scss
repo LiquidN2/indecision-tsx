@@ -1,0 +1,11 @@
+@use '../base/settings' as *;
+
+.action {
+  margin-bottom: $l-size;
+}
+
+@media only screen and (min-width: $desktop-bp) {
+  .action {
+    margin-bottom: $xl-size;
+  }
+}

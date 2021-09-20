@@ -1,0 +1,8 @@
+@use 'settings' as *;
+
+.u-margin-bottom {
+  &--sm { margin-bottom: $s-size !important; }
+  &--md { margin-bottom: $m-size !important; }
+  &--lg { margin-bottom: $l-size !important; }
+  &--xl { margin-bottom: $xl-size !important; }
+}

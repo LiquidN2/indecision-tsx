@@ -1,0 +1,26 @@
+@use "../base/settings" as *;
+
+.header {
+  background: $off-black;
+  color: white;
+  margin-bottom: $l-size;
+  padding: $m-size 0;
+
+  &__title {
+    font-size: $l-size;
+    margin: 0.5rem;
+  }
+
+  &__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: $desktop-bp) {
+  .header {
+    margin-bottom: $xl-size;
+  }
+}

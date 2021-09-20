@@ -1,0 +1,40 @@
+@use '../base/settings' as *;
+
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $m-size 0;
+  padding: 0 $m-size;
+}
+
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size;
+
+  &__input {
+    flex: 1;
+    margin: 0 0 $m-size 0;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    padding: $s-size;
+    font-family: inherit;
+    background: $dark-blue;
+    color: white;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: 1px solid $off-white;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-bp) {
+  .add-option {
+    flex-direction: row;
+
+    &__input {
+      margin: 0 $m-size 0 0;
+    }
+  }
+}
